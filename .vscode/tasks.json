@@ -1,0 +1,30 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+    {
+        "type": "shell",
+        "label": "OpenCV 4.5.1 编译任务",
+        "command": "D:/ProgramData/mingw64/bin/g++.exe",
+        "args": [
+            "-g",
+            "${file}",
+            "-o",
+            "${workspaceFolder}\\${fileBasenameNoExtension}.exe",
+            "E:/workspace/Code/opencv/OpenCV_MinGW_Build_OpenCV_4.5.1_with_contrib/x64/mingw/bin/libopencv_img_hash451.dll",
+            "E:/workspace/Code/opencv/OpenCV_MinGW_Build_OpenCV_4.5.1_with_contrib/x64/mingw/bin/libopencv_world451.dll",
+            "-I",
+            "E:/workspace/Code/opencv/OpenCV_MinGW_Build_OpenCV_4.5.1_with_contrib/include/opencv2/",
+        ],
+        "options": {
+            "cwd": "D:/ProgramData/mingw64/bin"
+        },
+        "problemMatcher": [
+            "$gcc"
+        ],
+        "group": {
+            "kind": "build",
+            "isDefault": true
+        }
+    }
+]
+}
